@@ -25,6 +25,10 @@ public class ADynamicStringComparator implements Comparator<String>
      */
     ADynamicStringComparator(List<String> desiredOrder)
     {
+        if(desiredOrder == null){
+            throw new IllegalArgumentException("desiredOrder cannot be null.");
+        }
+        //set everything to lowercase
         for (String string : desiredOrder) {
             this.order.add(string.toLowerCase());
         }
