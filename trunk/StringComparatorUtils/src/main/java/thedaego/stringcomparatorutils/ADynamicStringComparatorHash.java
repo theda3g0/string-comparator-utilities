@@ -4,7 +4,6 @@
  */
 package thedaego.stringcomparatorutils;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
@@ -13,8 +12,8 @@ import java.util.List;
  *
  * @author thedaego
  */
-public class ADynamicStringComparatorHash implements Comparator<String>{
-    private ArrayList<String> order = new ArrayList<String>();
+public class ADynamicStringComparatorHash implements Comparator<String>
+{
     private HashMap<String, Integer> hash = new HashMap<String, Integer>();
     /**
      * String Comparator class that takes an explicit desired order. 
